@@ -9,55 +9,98 @@ export default new Vuex.Store({
       { 
         id: "key-partners", 
         title: 'Key Partners', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          'Who are your Key Partners?',
+          'Who are your Key supplies?',
+          'Which Key Resources are we acquairing from Partners?',
+          'Wich Key Activities do partners perform?',
+        ],
         cards: []
       },
       { 
         id: "key-activities", 
         title: 'Key Activities', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          'What Key Activities do yor Value Proposition require?',
+          'Our Distribution Channels?',
+          'Customer Relationships?',
+          'Revenue streams?'
+        ],
         cards: [] 
       },
       { 
         id: "key-resources", 
         title: 'Key Resources', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          'What Key Resources do your Value Propositions require?',
+          'Our Distribution Channels? Customer Relationships?',
+          'Revenue Streams?'
+        ],
         cards: [] 
       },
       { 
         id: "value-proposition", 
         title: 'Value Proposition', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          "What value do we deliver to the customer?",
+          "Which one of you customer's problems are we helping to solve?",
+          "What bundles of products and services are we offering to each Customer Segment?",
+          "Which customer needs are we satisfying?"
+        ],
         cards: [] 
       },
       { 
         id: "customer-relationships", 
         title: 'Customer Relationships', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          "What type of relationship does each of our Customer Segments expect us to establish and maintain with them?",
+          "Which ones have we established?",
+          "How are they integrated with the rest of our business model?",
+          "How costly are they?"
+        ],
         cards: [] 
       },
       { 
         id: "channels", 
         title: 'Channels', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          "Through which Channels do our Customer Segments want to be reached?",
+          "How are we reaching them now?",
+          "How are our Channels integrated?",
+          "Which ones work best?",
+          "Which ones are most cost-efficient?",
+          "How are we integrating them with customer routines?"
+        ],
         cards: [] 
       },
       { 
         id: "customer-segments", 
-        title: 'Customer Segments', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        title: 'Customer Segments',
+        helper: [
+          "For whom are we creating value?",
+          "Who are our most important customers?"
+        ] ,
         cards: [] 
       },
       { 
         id: "cost-structure", 
         title: 'Cost Structure', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          "What are the most important costs inherent in our business modal?",
+          "Which Key Resources are most expensive?",
+          "Which Key Activities are most expensive?"
+        ],
         cards: [] 
       },
       { 
         id: "revenue-streams", 
         title: 'Revenue Streams', 
-        helper: ['lorem ipsum dolor', 'lorem ipsum dolor', 'lorem ipsum dolor'], 
+        helper: [
+          "For what value are our customers really willing to pay?",
+          "For what do they currently pay?",
+          "How would they prefer to pay?",
+          "How much does each Revenue Stream contribute to overall revenues?"
+        ],
         cards: [] 
       },
     ]

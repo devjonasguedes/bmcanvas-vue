@@ -74,7 +74,7 @@ export default {
     display: flex;
     justify-content: space-between;
     height: 23px;
-    // cursor: move;
+    cursor: move;
     background: darken(#FEC530, 10%);
 
     ul {

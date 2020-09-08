@@ -5,7 +5,6 @@
       <div class="canvas-board">
         <Column v-for="(column, columnIndex) in canvas" :column="column" :index="columnIndex" :key="column.id" height="100%">
           <draggable v-model="column.cards" group="cards" @end="dragSave" class="canvas-draggable">
-            <!-- <div v-for="element in myArray" :key="element.id">{{element.name}}</div> -->
             <Card v-for="(card, cardIndex) in column.cards" :index="cardIndex" :column="columnIndex" :card="card" :key="`card-${cardIndex}`" />
           </draggable>
         </Column>
@@ -51,7 +50,6 @@ export default {
   methods: {
     ...mapActions(['loadLocalCanvas']),
     dragSave() {
-
       setTimeout(() => {
         localStorage.setItem('canvas', JSON.stringify(this.canvas));
       }, 500);
@@ -66,7 +64,7 @@ export default {
 <style scoped lang="scss">
 
 .canvas-draggable {
-  min-height: 130px;
+  min-height: 150px;
 }
 
 .container {

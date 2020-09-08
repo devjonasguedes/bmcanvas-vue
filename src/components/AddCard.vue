@@ -52,13 +52,13 @@ export default {
 
 .canvas-add {
   margin: 0 -15px -15px -15px;
-  padding: 5px 15px;
+  padding: 5px 10px;
 
   input {
     border: 0;
     outline: 0;
     width: 100%;
-    padding: 3px 10px 3px 15px;
+    padding: 3px 10px 3px 10px;
     font-size: .9rem;
     background: #f3f3f3;
   }
