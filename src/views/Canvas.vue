@@ -3,8 +3,11 @@
     <div class="container">
 
       <div class="canvas-board">
-        <Column v-for="(column, columnIndex) in canvas" :column="column" :index="columnIndex" :key="column.id">
-          <Card v-for="(card, cardIndex) in column.cards" :index="cardIndex" :column="columnIndex" :card="card" :key="`card-${cardIndex}`" />
+        <Column v-for="(column, columnIndex) in canvas" :column="column" :index="columnIndex" :key="column.id" height="100%">
+          <draggable v-model="column.cards" group="cards" @end="dragSave" class="canvas-draggable">
+            <!-- <div v-for="element in myArray" :key="element.id">{{element.name}}</div> -->
+            <Card v-for="(card, cardIndex) in column.cards" :index="cardIndex" :column="columnIndex" :card="card" :key="`card-${cardIndex}`" />
+          </draggable>
         </Column>
       </div>
 
@@ -16,6 +19,7 @@
 // @ is an alias to /src
 import Column from '@/components/Column'
 import Card from '@/components/Card'
+import draggable from 'vuedraggable'
 
 import { mapState } from 'vuex'
 import { mapActions } from 'vuex'
@@ -24,6 +28,7 @@ import { mapActions } from 'vuex'
 export default {
   name: 'Canvas',
   components: {
+    draggable,
     Column,
     Card
   },
@@ -45,6 +50,12 @@ export default {
   },
   methods: {
     ...mapActions(['loadLocalCanvas']),
+    dragSave() {
+
+      setTimeout(() => {
+        localStorage.setItem('canvas', JSON.stringify(this.canvas));
+      }, 500);
+    }
 
   }
 }
@@ -53,6 +64,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.canvas-draggable {
+  min-height: 130px;
+}
+
+.container {
+  max-width: 1200px;
+}
 
 .canvas .container {
   min-width: 960px;

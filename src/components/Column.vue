@@ -84,11 +84,11 @@ export default {
 
 #cost-structure,
 #revenue-streams {
-  width: calc(100% + 128px);
+  width: calc(100% + 118px);
 }
 
 #revenue-streams {
-  margin-left: -128px;
+  margin-left: -118px;
 }
 
 .canvas-column {

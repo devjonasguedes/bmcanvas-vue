@@ -54,21 +54,21 @@ export default {
   background: #FEC530;
 }
 
-@keyframes card {
-  from {
-    transform: translate3d(0, 5px, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
+// @keyframes card {
+//   from {
+//     transform: translate3d(0, 5px, 0);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: translate3d(0, 0, 0);
+//     opacity: 1;
+//   }
+// }
 
 .canvas-card {
   border-radius: 2px;
   margin-bottom: 10px;
-  animation: card .2s ease-out forwards;
+  // animation: card .2s ease-out forwards;
 
   &__header {
     display: flex;
