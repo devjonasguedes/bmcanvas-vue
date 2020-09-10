@@ -19,6 +19,7 @@
 @import url('./css/bootstrap.min.css');
 
 body {
+  background: #FBFCFD;
   font-family: 'Roboto', sans-serif;
 }
 

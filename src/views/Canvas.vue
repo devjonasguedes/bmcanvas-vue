@@ -52,7 +52,7 @@ export default {
     dragSave() {
       setTimeout(() => {
         localStorage.setItem('canvas', JSON.stringify(this.canvas));
-      }, 500);
+      }, 100);
     }
 
   }

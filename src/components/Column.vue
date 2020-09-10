@@ -32,7 +32,7 @@
       </div>
     </div>
     
-    <div class="canvas-column__helper">
+    <div class="canvas-column__helper" v-if="column.cards < 1">
       <ul>
         <li v-for="item in column.helper" :key="item">{{item}}</li>
       </ul>
@@ -104,6 +104,13 @@ export default {
 #cost-structure,
 #revenue-streams {
   width: calc(100% + 118px);
+
+  .canvas-draggable {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+  }
 }
 
 #revenue-streams {
@@ -118,6 +125,7 @@ export default {
   z-index: 0;
   display: flex;
   flex-direction: column;
+  background: white;
 
   &__title {
     display: flex;
@@ -152,7 +160,7 @@ export default {
 
       li {
         margin-bottom: 1px;
-        font-size: .7rem;
+        font-size: .67rem;
         font-style: italic;
       }
     }

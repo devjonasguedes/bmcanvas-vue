@@ -61,6 +61,11 @@ export default {
     padding: 3px 10px 3px 10px;
     font-size: .9rem;
     background: #f3f3f3;
+    border: 1px solid transparent;
+
+    &:focus {
+      border: 1px dashed #bbb;
+    }
   }
 }
 
