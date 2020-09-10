@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Canvas from '../views/Canvas.vue'
+import Code from '../views/Code.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Canvas',
     component: Canvas
+  },
+  {
+    path: '/code',
+    name: 'Code',
+    component: Code
   },
   // {
   //   path: '/about',

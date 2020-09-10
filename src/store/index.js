@@ -117,7 +117,7 @@ export default new Vuex.Store({
     loadLocalCanvas({ state }, payload) {
 
       payload.forEach((element, index) => {
-        state.canvas[index].cards.push(...element.cards);
+        state.canvas[index].cards = [...element.cards];
       });
 
     },

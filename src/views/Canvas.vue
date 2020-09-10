@@ -1,5 +1,5 @@
 <template>
-  <div class="canvas mt-4 mb-4">
+  <div class="canvas mt-4">
     <div class="container">
 
       <div class="canvas-board">
@@ -9,6 +9,8 @@
           </draggable>
         </Column>
       </div>
+      
+      <footer>Created by: <a href="https://github.com/jgcardoso">Jonas Guedes</a></footer>
 
     </div>
   </div>
@@ -85,6 +87,13 @@ export default {
     "key-partners key-resources value-proposition channels customer-segments"
     "cost-structure cost-structure . revenue-streams revenue-streams"
   ;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: .8rem;
+  opacity: .6;
 }
 
 </style>
