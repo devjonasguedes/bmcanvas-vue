@@ -6,7 +6,13 @@
     </div> -->
 
     <header class="header-app bg-primary text-white">
-      <h1>Business Model Canvas</h1>
+      <div></div>
+      <h1><router-link to="/">Business Model Canvas</router-link></h1>
+      <div class="text-right">
+        <router-link to="/code">
+          <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/></svg>
+        </router-link>
+      </div>
     </header>
 
     <router-view/>
@@ -26,10 +32,31 @@ body {
 header {
   padding: 20px 15px;
   text-align: center;
+  display: flex;
+  align-items: center;
+
+  > div {
+    &:first-child {
+      flex: 1;
+    }
+    &:last-child {
+      flex: 1;
+    }
+  }
 
   h1 {
     margin: 0;
     font-size: 1.7rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: #f8f8f8;
+      text-decoration: none;
+    }
   }
 }
 
